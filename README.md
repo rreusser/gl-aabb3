@@ -1,14 +1,12 @@
 # gl-aabb3
 
-[![experimental](http://badges.github.io/stability-badges/dist/experimental.svg)](http://github.com/badges/stability-badges)
+[![unstable](http://badges.github.io/stability-badges/dist/unstable.svg)](http://github.com/badges/stability-badges)
 
 ## Introduction
 
 This module implements gl-matrix style functions for axis-aligned bounding boxes defined by the 6-tuple `(xmin, ymin, zmin, xmax, ymax, zmax)`.
 
 ## Usage
-
-***Not published***
 
 [![NPM](https://nodei.co/npm/gl-aabb3.png)](https://nodei.co/npm/gl-aabb3/)
 
