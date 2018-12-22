@@ -1,0 +1,22 @@
+{
+  "name": "gl-aabb3",
+  "version": "1.0.0",
+  "description": "gl-matrix style functions for 3D axis-aligned bounding boxes",
+  "main": "index.js",
+  "scripts": {
+    "test": "node test.js"
+  },
+  "keywords": [
+    "gl-matrix",
+    "matrix",
+    "math",
+    "gl",
+    "aabb"
+  ],
+  "author": "Ricky Reusser",
+  "license": "MIT",
+  "devDependencies": {
+    "tap-spec": "^5.0.0",
+    "tape": "^4.9.1"
+  }
+}
