@@ -27,35 +27,37 @@ var scale = require('gl-aabb3/scale');
 
 ## API
 
+  - [center()](#centeroutvec3-aaabb3)
+  - [clone()](#cloneaaabb3)
+  - [copy()](#copyoutaabb3-aaabb3)
   - [create()](#create)
-  - [center](#center)
-  - [clone](#clone)
-  - [copy](#copy)
-  - [create](#create)
-  - [diagonal](#diagonal)
-  - [diagonalLength](#diagonalLength)
-  - [difference](#difference)
-  - [epsilon](#epsilon)
-  - [equals](#equals)
-  - [exactEquals](#exactEquals)
-  - [fromValues](#fromValues)
-  - [index](#index)
-  - [intersection](#intersection)
-  - [intersectsPlane](#intersectsPlane)
-  - [intersectsRay](#intersectsRay)
-  - [isNonNegative](#isNonNegative)
-  - [isPositive](#isPositive)
-  - [normalize](#normalize)
-  - [scale](#scale)
-  - [set](#set)
-  - [squaredDiagonalLength](#squaredDiagonalLength)
-  - [surfaceArea](#surfaceArea)
-  - [transformMat3](#transformMat3)
-  - [transformMat4](#transformMat4)
-  - [transformQuat](#transformQuat)
-  - [translate](#translate)
-  - [union](#union)
-  - [volume](#volume)
+  - [diagonal()](#diagonaloutvec3-aaabb3)
+  - [diagonalLength()](#diagonallengthaaabb3)
+  - [difference()](#differenceoutaabb3-aaabb3-baabb3)
+  - [equals()](#equalsaaabb3-baabb3)
+  - [exactEquals()](#exactequalsaaabb3-baabb3)
+  - [expand()](#expandoutaabb3-aaabb3-distancevec3)
+  - [expandRelative()](#expandrelativeoutaabb3-aaabb3-scalevec3)
+  - [fromValues()](#fromvaluesxminnumber-yminnumber-zminnumber-xmaxnumber-ymaxnumber-zmaxnumber)
+  - [hasNonNegativeExtent](#hasnonnegativeextentaaabb3)
+  - [hasPositiveExtent](#haspositiveextentwaaabb3)
+  - [intersection()](#intersectionoutaabb3-aaabb3-baabb3)
+  - [intersectsPlane()](#intersectsplaneaaabb3-originvec3-normalvec3)
+  - [intersectsRay()](#intersectsplaneaaabb3-originvec3-normalvec3)
+  - [normalize()](#normalizeoutaabb3-aaabb3)
+  - [radius()](#radiusaaabb3)
+  - [scale()](#scaleoutaabb3-aaabb3-scalevec3)
+  - [set()](#setoutaabb3-xminnumber-yminnumber-zminnumber-xmaxnumber-ymaxnumber-zmaxnumber)
+  - [shape()](#shapeoutvec3-aaabb3)
+  - [squaredDiagonalLength()](#squareddiagonallengthaaabb3)
+  - [squaredRadius()](#squaredradiusaaabb3)
+  - [surfaceArea()](#surfaceareaaaabb3)
+  - [transformMat3()](#transformmat3outaabb3-aaabb3-mmat3)
+  - [transformMat4()](#transformmat4outaabb3-aaabb3-mmat4)
+  - [transformQuat()](#transformquatoutaabb3-aaabb3-qquat)
+  - [translate()](#translateoutaabb3-aaabb3-bvec3)
+  - [union()](#unionoutaabb3-aaabb3-baabb3)
+  - [volume()](#volumeaaabb3)
 
 ### center(out:vec3, a:aabb3)
 
@@ -69,7 +71,7 @@ var scale = require('gl-aabb3/scale');
 
   Copy the values from one bounding box to another.
 
-### create
+### create()
 
   Create a new, empty aabb3.
 
@@ -110,7 +112,7 @@ var scale = require('gl-aabb3/scale');
 
   Returns true if the the bounding box has non-negative extent in every dimension.
 
-### hasPositiveExtentW(a:aabb3)
+### hasPositiveExtent(a:aabb3)
 
   Returns true if the the bounding box has positive extent in every dimension.
 
