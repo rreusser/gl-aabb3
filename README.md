@@ -40,7 +40,7 @@ var scale = require('gl-aabb3/scale');
   - [expandRelative()](#expandrelativeoutaabb3-aaabb3-scalevec3)
   - [fromValues()](#fromvaluesxminnumber-yminnumber-zminnumber-xmaxnumber-ymaxnumber-zmaxnumber)
   - [hasNonNegativeExtent](#hasnonnegativeextentaaabb3)
-  - [hasPositiveExtent](#haspositiveextentwaaabb3)
+  - [hasPositiveExtent](#haspositiveextentaaabb3)
   - [intersection()](#intersectionoutaabb3-aaabb3-baabb3)
   - [intersectsPlane()](#intersectsplaneaaabb3-originvec3-normalvec3)
   - [intersectsRay()](#intersectsplaneaaabb3-originvec3-normalvec3)
