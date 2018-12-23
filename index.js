@@ -27,9 +27,9 @@ module.exports = {
   squaredRadius: require('./squaredRadius'),
   surfaceArea: require('./surfaceArea'),
   translate: require('./translate'),
-  transformMat3: require('./transformMat3'),
-  transformMat4: require('./transformMat4'),
-  transformQuat: require('./transformQuat'),
+  //transformMat3: require('./transformMat3'),
+  //transformMat4: require('./transformMat4'),
+  //transformQuat: require('./transformQuat'),
   union: require('./union'),
   volume: require('./volume'),
 };

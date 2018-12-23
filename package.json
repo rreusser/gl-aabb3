@@ -1,6 +1,6 @@
 {
   "name": "gl-aabb3",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "gl-matrix style functions for 3D axis-aligned bounding boxes",
   "main": "index.js",
   "scripts": {
